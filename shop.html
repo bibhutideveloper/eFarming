@@ -1,0 +1,461 @@
+<html>
+<head>
+	<title>Shop</title>
+	
+	<link href="css/style.css" rel="stylesheet" />
+	<link href="css/shop.css" rel="stylesheet" />
+	<link href="css/header.css" rel="stylesheet" />
+	<link href="css/footer.css" rel="stylesheet" />
+	<link href="css/shape-divider.css" rel="stylesheet" />
+	
+	<script src="https://kit.fontawesome.com/8755f6524d.js" crossorigin="anonymous"></script>
+	
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+	</style>
+</head>
+<body>
+<!-- header -->
+<section class="header">
+	<!-- Logo -->
+	<div class="logo">
+		<a href="#"><img src="images/site-controls/logo.png ?>" alt="Site-Logo" /></a>
+	</div>
+	
+	<!-- Navbar -->
+	<div class="navbar">
+		<ul class="navbar-nav">
+			<li class="active"><a href="index.html">Home</a></li>
+			<li><a href="farmers.html">Farmers</a></li>
+			<li><a href="shop.html">Shop</a></li>
+			<li><a href="gprice.html">Govt. Prices</a></li>
+			<li><a href="contact.html">Contact Us</a></li>
+			<li><a href="about.html">About Us</a></li>
+		</ul>
+	</div>
+	
+	<!-- Login Button -->
+	<div class="account-area">
+		<a href="popup/login-popup.html"><button Value="Login" class="btn btn-sm btn-fill" id=loginBtn>Login</button></a>
+	</div>
+	
+	<!-- login popup -->
+	
+</section>
+
+<!-- Top Large header -->
+<section class="heading-large">
+	<div class="top-heading-large">
+		<h2>Crop Shop</h2>
+		<div class="divider"></div>
+		<p>Explore crops as your requirement and deal with farmer directly</p>
+	</div>
+
+<div class="shape-divider-4">
+    <svg data-name="Layer 1" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
+    </svg>
+</div>		
+</section>
+
+
+
+<!-- Shop -->
+<section class="shop-section">
+	<div class="shop">
+		<div class="filter">
+			<div class="filter-menu">
+				<h4 class="filter-heading">Major Crops Categories</h4>
+				<div class="filter-menu-1">					
+					<a href="#">Food Crops</a>
+					<a href="#">Cash Crops</a>
+					<a href="#">Plantation Crops</a>
+					<a href="#">Horticulture Crops</a>
+				</div>
+			</div>
+
+			<div class="filter-menu">
+				<h4 class="filter-heading">Raw Crops</h4>				
+				<div class="filter-menu-2">					
+					<a href="#">Wheat</a>
+					<a href="#">Rice</a>
+					<a href="#">Jowar</a>
+					<a href="#">Ragi and Bajra (millets)</a>
+					<a href="#">Lemons</a>
+					<a href="#">Chickpeas</a>
+					<a href="#">Green peas</a>
+					<a href="#">Potatoes</a>
+					<a href="#">Pumpkins</a>
+					<a href="#">Tomatoes</a>
+					<a href="#">Onions</a>
+					<a href="#">Brinjal</a>
+					<a href="#">Mangoes</a>
+					<a href="#">Sugarcane</a>
+					<a href="#">Coconuts</a>
+				</div>
+			</div>
+		</div>
+		
+		<!-- Crops Preview -->
+		<div class="crops-preview">
+						<form name="shopForm" action="singleProduct.html" method="POST">
+						<a href="singleProduct.html" style="text-decoration: none;">
+							<div class="crops-items">
+								<div class="crop-image">
+									<img src="images/crops/bhindi.png" alt="crop-image" name="cropImg" />
+								</div>
+								<p class="crop-ctg" name="cropCtg">Vegetable</p>
+								<div class="crops-details">
+									<div class="crops-under-1">
+										<p class="crop-name" name="cropName">Fresh Bhindi</p>
+										<p class="crop-gprice" name="cropGPrice">Govt. price: &#8377; 100</p>
+										<p class="crop-fprice" name="cropFPrice">Farmer price: &#8377; 80<span class="tick-mark">&#10003;</span></p>
+										<!-- <input type="text" class="crop-fprice" name="cropId" value="<?php echo $row['crop_id']; ?>" readonly style="display:none" /> -->
+									</div>
+									<div class="crops-under-2">
+										<i class="fa-solid fa-heart"></i>
+									</div>
+								</div>
+								<!--<button class="btn btn-sm btn-transparent purchase-request" name="sendRequest" >
+									<i class="fa-solid fa-cart-shopping left-side-icon"></i>Request to Buy
+								</button>-->
+								
+								<input type="submit" class="btn btn-sm btn-transparent purchase-request" name="sendRequest" value="View Crop" />
+							</div> 
+						</a>
+						</form>
+
+						<form name="shopForm" action="singleProduct.html" method="POST">
+						<!-- <a href="singleProduct.php?crop_id='.$cropId.'" style="text-decoration:none;color:red"> -->
+							<div class="crops-items">
+								<div class="crop-image">
+									<img src="images/crops/apple.png" alt="crop-image" name="cropImg" />
+								</div>
+								<p class="crop-ctg" name="cropCtg">Fruits</p>
+								<div class="crops-details">
+									<div class="crops-under-1">
+										<p class="crop-name" name="cropName">Fresh Apple</p>
+										<p class="crop-gprice" name="cropGPrice">Govt. price: &#8377; 231</p>
+										<p class="crop-fprice" name="cropFPrice">Farmer price: &#8377; 210<span class="tick-mark">&#10003;</span></p>
+										<!-- <input type="text" class="crop-fprice" name="cropId" value="<?php echo $row['crop_id']; ?>" readonly style="display:none" /> -->
+									</div>
+									<div class="crops-under-2">
+										<i class="fa-solid fa-heart"></i>
+									</div>
+								</div>
+								<!--<button class="btn btn-sm btn-transparent purchase-request" name="sendRequest" >
+									<i class="fa-solid fa-cart-shopping left-side-icon"></i>Request to Buy
+								</button>-->
+								
+								<input type="submit" class="btn btn-sm btn-transparent purchase-request" name="sendRequest" value="View Crop" />
+							</div> 
+						<!-- </a> -->
+						</form>	
+
+						<form name="shopForm" action="singleProduct.html" method="POST">
+						<!-- <a href="singleProduct.php?crop_id='.$cropId.'" style="text-decoration:none;color:red"> -->
+							<div class="crops-items">
+								<div class="crop-image">
+									<img src="images/crops/garlic.png" alt="crop-image" name="cropImg" />
+								</div>
+								<p class="crop-ctg" name="cropCtg">Vegetable</p>
+								<div class="crops-details">
+									<div class="crops-under-1">
+										<p class="crop-name" name="cropName">Fresh Garlic</p>
+										<p class="crop-gprice" name="cropGPrice">Govt. price: &#8377; 404</p>
+										<p class="crop-fprice" name="cropFPrice">Farmer price: &#8377; 389<span class="tick-mark">&#10003;</span></p>
+										<!-- <input type="text" class="crop-fprice" name="cropId" value="<?php echo $row['crop_id']; ?>" readonly style="display:none" /> -->
+									</div>
+									<div class="crops-under-2">
+										<i class="fa-solid fa-heart"></i>
+									</div>
+								</div>
+								<!--<button class="btn btn-sm btn-transparent purchase-request" name="sendRequest" >
+									<i class="fa-solid fa-cart-shopping left-side-icon"></i>Request to Buy
+								</button>-->
+								
+								<input type="submit" class="btn btn-sm btn-transparent purchase-request" name="sendRequest" value="View Crop" />
+							</div> 
+						<!-- </a> -->
+						</form>
+
+						<form name="shopForm" action="singleProduct.html" method="POST">
+						<!-- <a href="singleProduct.php?crop_id='.$cropId.'" style="text-decoration:none;color:red"> -->
+							<div class="crops-items">
+								<div class="crop-image">
+									<img src="images/crops/cagua.png" alt="crop-image" name="cropImg" />
+								</div>
+								<p class="crop-ctg" name="cropCtg">Vegetable</p>
+								<div class="crops-details">
+									<div class="crops-under-1">
+										<p class="crop-name" name="cropName">Cagua</p>
+										<p class="crop-gprice" name="cropGPrice">Govt. price: &#8377; 78</p>
+										<p class="crop-fprice" name="cropFPrice">Farmer price: &#8377; 67<span class="tick-mark">&#10003;</span></p>
+										<!-- <input type="text" class="crop-fprice" name="cropId" value="<?php echo $row['crop_id']; ?>" readonly style="display:none" /> -->
+									</div>
+									<div class="crops-under-2">
+										<i class="fa-solid fa-heart"></i>
+									</div>
+								</div>
+								<!--<button class="btn btn-sm btn-transparent purchase-request" name="sendRequest" >
+									<i class="fa-solid fa-cart-shopping left-side-icon"></i>Request to Buy
+								</button>-->
+								
+								<input type="submit" class="btn btn-sm btn-transparent purchase-request" name="sendRequest" value="View Crop" />
+							</div> 
+						<!-- </a> -->
+						</form>
+
+						<form name="shopForm" action="singleProduct.html" method="POST">
+						<!-- <a href="singleProduct.php?crop_id='.$cropId.'" style="text-decoration:none;color:red"> -->
+							<div class="crops-items">
+								<div class="crop-image">
+									<img src="images/crops/chinease_leek.png" alt="crop-image" name="cropImg" />
+								</div>
+								<p class="crop-ctg" name="cropCtg">Vegetable</p>
+								<div class="crops-details">
+									<div class="crops-under-1">
+										<p class="crop-name" name="cropName">Chinese Leek</p>
+										<p class="crop-gprice" name="cropGPrice">Govt. price: &#8377; 67</p>
+										<p class="crop-fprice" name="cropFPrice">Farmer price: &#8377; 59<span class="tick-mark">&#10003;</span></p>
+										<!-- <input type="text" class="crop-fprice" name="cropId" value="<?php echo $row['crop_id']; ?>" readonly style="display:none" /> -->
+									</div>
+									<div class="crops-under-2">
+										<i class="fa-solid fa-heart"></i>
+									</div>
+								</div>
+								<!--<button class="btn btn-sm btn-transparent purchase-request" name="sendRequest" >
+									<i class="fa-solid fa-cart-shopping left-side-icon"></i>Request to Buy
+								</button>-->
+								
+								<input type="submit" class="btn btn-sm btn-transparent purchase-request" name="sendRequest" value="View Crop" />
+							</div> 
+						<!-- </a> -->
+						</form>
+
+						<form name="shopForm" action="singleProduct.html" method="POST">
+						<!-- <a href="singleProduct.php?crop_id='.$cropId.'" style="text-decoration:none;color:red"> -->
+							<div class="crops-items">
+								<div class="crop-image">
+									<img src="images/crops/cucumber.png" alt="crop-image" name="cropImg" />
+								</div>
+								<p class="crop-ctg" name="cropCtg">Vegetable</p>
+								<div class="crops-details">
+									<div class="crops-under-1">
+										<p class="crop-name" name="cropName">New Cucumber</p>
+										<p class="crop-gprice" name="cropGPrice">Govt. price: &#8377; 60</p>
+										<p class="crop-fprice" name="cropFPrice">Farmer price: &#8377; 55<span class="tick-mark">&#10003;</span></p>
+										<!-- <input type="text" class="crop-fprice" name="cropId" value="<?php echo $row['crop_id']; ?>" readonly style="display:none" /> -->
+									</div>
+									<div class="crops-under-2">
+										<i class="fa-solid fa-heart"></i>
+									</div>
+								</div>
+								<!--<button class="btn btn-sm btn-transparent purchase-request" name="sendRequest" >
+									<i class="fa-solid fa-cart-shopping left-side-icon"></i>Request to Buy
+								</button>-->
+								
+								<input type="submit" class="btn btn-sm btn-transparent purchase-request" name="sendRequest" value="View Crop" />
+							</div> 
+						<!-- </a> -->
+						</form>
+
+						<form name="shopForm" action="singleProduct.html" method="POST">
+						<!-- <a href="singleProduct.php?crop_id='.$cropId.'" style="text-decoration:none;color:red"> -->
+							<div class="crops-items">
+								<div class="crop-image">
+									<img src="images/crops/jackfruits.png" alt="crop-image" name="cropImg" />
+								</div>
+								<p class="crop-ctg" name="cropCtg">Vegetable</p>
+								<div class="crops-details">
+									<div class="crops-under-1">
+										<p class="crop-name" name="cropName">JackFruits</p>
+										<p class="crop-gprice" name="cropGPrice">Govt. price: &#8377; 98</p>
+										<p class="crop-fprice" name="cropFPrice">Farmer price: &#8377; 90<span class="tick-mark">&#10003;</span></p>
+										<!-- <input type="text" class="crop-fprice" name="cropId" value="<?php echo $row['crop_id']; ?>" readonly style="display:none" /> -->
+									</div>
+									<div class="crops-under-2">
+										<i class="fa-solid fa-heart"></i>
+									</div>
+								</div>
+								<!--<button class="btn btn-sm btn-transparent purchase-request" name="sendRequest" >
+									<i class="fa-solid fa-cart-shopping left-side-icon"></i>Request to Buy
+								</button>-->
+								
+								<input type="submit" class="btn btn-sm btn-transparent purchase-request" name="sendRequest" value="View Crop" />
+							</div> 
+						<!-- </a> -->
+						</form>
+
+						<form name="shopForm" action="singleProduct.html" method="POST">
+						<!-- <a href="singleProduct.php?crop_id='.$cropId.'" style="text-decoration:none;color:red"> -->
+							<div class="crops-items">
+								<div class="crop-image">
+									<img src="images/crops/grapes.png" alt="crop-image" name="cropImg" />
+								</div>
+								<p class="crop-ctg" name="cropCtg">Fruits</p>
+								<div class="crops-details">
+									<div class="crops-under-1">
+										<p class="crop-name" name="cropName">Grapes</p>
+										<p class="crop-gprice" name="cropGPrice">Govt. price: &#8377; 90</p>
+										<p class="crop-fprice" name="cropFPrice">Farmer price: &#8377; 85<span class="tick-mark">&#10003;</span></p>
+										<!-- <input type="text" class="crop-fprice" name="cropId" value="<?php echo $row['crop_id']; ?>" readonly style="display:none" /> -->
+									</div>
+									<div class="crops-under-2">
+										<i class="fa-solid fa-heart"></i>
+									</div>
+								</div>
+								<!--<button class="btn btn-sm btn-transparent purchase-request" name="sendRequest" >
+									<i class="fa-solid fa-cart-shopping left-side-icon"></i>Request to Buy
+								</button>-->
+								
+								<input type="submit" class="btn btn-sm btn-transparent purchase-request" name="sendRequest" value="View Crop" />
+							</div> 
+						<!-- </a> -->
+						</form>
+
+						<form name="shopForm" action="singleProduct.html" method="POST">
+						<!-- <a href="singleProduct.php?crop_id='.$cropId.'" style="text-decoration:none;color:red"> -->
+							<div class="crops-items">
+								<div class="crop-image">
+									<img src="images/crops/potato.png" alt="crop-image" name="cropImg" />
+								</div>
+								<p class="crop-ctg" name="cropCtg">Vegetable</p>
+								<div class="crops-details">
+									<div class="crops-under-1">
+										<p class="crop-name" name="cropName">Potato</p>
+										<p class="crop-gprice" name="cropGPrice">Govt. price: &#8377; 40</p>
+										<p class="crop-fprice" name="cropFPrice">Farmer price: &#8377; 37<span class="tick-mark">&#10003;</span></p>
+										<!-- <input type="text" class="crop-fprice" name="cropId" value="<?php echo $row['crop_id']; ?>" readonly style="display:none" /> -->
+									</div>
+									<div class="crops-under-2">
+										<i class="fa-solid fa-heart"></i>
+									</div>
+								</div>
+								<!--<button class="btn btn-sm btn-transparent purchase-request" name="sendRequest" >
+									<i class="fa-solid fa-cart-shopping left-side-icon"></i>Request to Buy
+								</button>-->
+								
+								<input type="submit" class="btn btn-sm btn-transparent purchase-request" name="sendRequest" value="View Crop" />
+							</div> 
+						<!-- </a> -->
+						</form>
+
+						<form name="shopForm" action="singleProduct.html" method="POST">
+						<!-- <a href="singleProduct.php?crop_id='.$cropId.'" style="text-decoration:none;color:red"> -->
+							<div class="crops-items">
+								<div class="crop-image">
+									<img src="images/crops/rice.png" alt="crop-image" name="cropImg" />
+								</div>
+								<p class="crop-ctg" name="cropCtg">Food Grains</p>
+								<div class="crops-details">
+									<div class="crops-under-1">
+										<p class="crop-name" name="cropName">New Rice</p>
+										<p class="crop-gprice" name="cropGPrice">Govt. price: &#8377; 55</p>
+										<p class="crop-fprice" name="cropFPrice">Farmer price: &#8377; 52<span class="tick-mark">&#10003;</span></p>
+										<!-- <input type="text" class="crop-fprice" name="cropId" value="<?php echo $row['crop_id']; ?>" readonly style="display:none" /> -->
+									</div>
+									<div class="crops-under-2">
+										<i class="fa-solid fa-heart"></i>
+									</div>
+								</div>
+								<!--<button class="btn btn-sm btn-transparent purchase-request" name="sendRequest" >
+									<i class="fa-solid fa-cart-shopping left-side-icon"></i>Request to Buy
+								</button>-->
+								
+								<input type="submit" class="btn btn-sm btn-transparent purchase-request" name="sendRequest" value="View Crop" />
+							</div> 
+						<!-- </a> -->
+						</form>
+
+						<form name="shopForm" action="singleProduct.html" method="POST">
+						<!-- <a href="singleProduct.php?crop_id='.$cropId.'" style="text-decoration:none;color:red"> -->
+							<div class="crops-items">
+								<div class="crop-image">
+									<img src="images/crops/yam.png" alt="crop-image" name="cropImg" />
+								</div>
+								<p class="crop-ctg" name="cropCtg">Vegetable</p>
+								<div class="crops-details">
+									<div class="crops-under-1">
+										<p class="crop-name" name="cropName">Yam</p>
+										<p class="crop-gprice" name="cropGPrice">Govt. price: &#8377; 39</p>
+										<p class="crop-fprice" name="cropFPrice">Farmer price: &#8377; 33<span class="tick-mark">&#10003;</span></p>
+										<!-- <input type="text" class="crop-fprice" name="cropId" value="<?php echo $row['crop_id']; ?>" readonly style="display:none" /> -->
+									</div>
+									<div class="crops-under-2">
+										<i class="fa-solid fa-heart"></i>
+									</div>
+								</div>
+								<!--<button class="btn btn-sm btn-transparent purchase-request" name="sendRequest" >
+									<i class="fa-solid fa-cart-shopping left-side-icon"></i>Request to Buy
+								</button>-->
+								
+								<input type="submit" class="btn btn-sm btn-transparent purchase-request" name="sendRequest" value="View Crop" />
+							</div> 
+						<!-- </a> -->
+						</form>
+
+						<form name="shopForm" action="singleProduct.html" method="POST">
+						<!-- <a href="singleProduct.php?crop_id='.$cropId.'" style="text-decoration:none;color:red"> -->
+							<div class="crops-items">
+								<div class="crop-image">
+									<img src="images/crops/soya.png" alt="crop-image" name="cropImg" />
+								</div>
+								<p class="crop-ctg" name="cropCtg">Vegetable</p>
+								<div class="crops-details">
+									<div class="crops-under-1">
+										<p class="crop-name" name="cropName">Raw Soya</p>
+										<p class="crop-gprice" name="cropGPrice">Govt. price: &#8377; 54</p>
+										<p class="crop-fprice" name="cropFPrice">Farmer price: &#8377; 47<span class="tick-mark">&#10003;</span></p>
+										<!-- <input type="text" class="crop-fprice" name="cropId" value="<?php echo $row['crop_id']; ?>" readonly style="display:none" /> -->
+									</div>
+									<div class="crops-under-2">
+										<i class="fa-solid fa-heart"></i>
+									</div>
+								</div>
+								<!--<button class="btn btn-sm btn-transparent purchase-request" name="sendRequest" >
+									<i class="fa-solid fa-cart-shopping left-side-icon"></i>Request to Buy
+								</button>-->
+								
+								<input type="submit" class="btn btn-sm btn-transparent purchase-request" name="sendRequest" value="View Crop" />
+							</div> 
+						<!-- </a> -->
+						</form>
+
+						<form name="shopForm" action="singleProduct.html" method="POST">
+						<!-- <a href="singleProduct.php?crop_id='.$cropId.'" style="text-decoration:none;color:red"> -->
+							<div class="crops-items">
+								<div class="crop-image">
+									<img src="images/crops/taro.png" alt="crop-image" name="cropImg" />
+								</div>
+								<p class="crop-ctg" name="cropCtg">Vegetable</p>
+								<div class="crops-details">
+									<div class="crops-under-1">
+										<p class="crop-name" name="cropName">Taro</p>
+										<p class="crop-gprice" name="cropGPrice">Govt. price: &#8377; 43</p>
+										<p class="crop-fprice" name="cropFPrice">Farmer price: &#8377; 39<span class="tick-mark">&#10003;</span></p>
+										<!-- <input type="text" class="crop-fprice" name="cropId" value="<?php echo $row['crop_id']; ?>" readonly style="display:none" /> -->
+									</div>
+									<div class="crops-under-2">
+										<i class="fa-solid fa-heart"></i>
+									</div>
+								</div>
+								<!--<button class="btn btn-sm btn-transparent purchase-request" name="sendRequest" >
+									<i class="fa-solid fa-cart-shopping left-side-icon"></i>Request to Buy
+								</button>-->
+								
+								<input type="submit" class="btn btn-sm btn-transparent purchase-request" name="sendRequest" value="View Crop" />
+							</div> 
+						<!-- </a> -->
+						</form>
+		</div>
+	</div>
+</section>
+
+<!-- footer -->
+<section class="footer">
+	<p>Copyright © www.efarming.com – 2022 – All Rights Reserved</p>
+</section>
+
+</body>
+</html>

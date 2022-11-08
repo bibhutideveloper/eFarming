@@ -1,0 +1,161 @@
+.productInfo{
+	/* background-color:lightblue; */
+	padding:50px 0; 
+}
+
+.productInfoContent{
+	display:flex;
+	flex-direction:row;
+	gap:50px;
+}
+
+.productImage{
+	display:flex;
+	flex-direction:column;
+	width:40%;
+	background-color:var(--grey);
+	padding:10px;
+	border-radius:10px;
+	box-shadow:0 0 5px rgba(0,0,0,0.5);
+}
+
+.productImage>div{
+	display:flex;
+	flex-direction:row;
+	justify-content:space-between;
+	margin-top:50px;
+	/* background-color:var(--grey-dark); */
+	border-radius:10px;
+}
+
+.productImage>div>img{
+	width:30%;
+}
+
+.productDetails{
+	display:flex;
+	flex-direction:column;
+	width:60%;
+	padding:10 30px 30px 30px;
+	gap:20px;
+	border-radius:10px;
+}
+
+.breadcrums{
+	color:var(--black-light);
+	font-size:14px;	
+}
+
+ul{
+	padding-left:30px;
+}
+
+.productTitle{
+	font-size:30px;
+	color:var(--primary);
+}
+
+.cropGPrice{
+	color:var(--black-light);
+}
+
+.cropFPrice{
+	font-weight:600;
+}
+
+.productDescription{
+	font-size:14px;
+}
+
+.cropQualityDesc{
+	display:flex;
+	flex-direction:column;
+	padding:10px;
+	font-size:14px;
+	background-color:var(--grey);
+	border-radius:10px;
+	gap:10px;
+	color:var(--black-light);
+	box-shadow:0 0 5px rgba(0,0,0,0.5);
+}
+
+.cropQualityDesc i{
+	color:var(--primary);
+}
+
+.purchase-request-single{
+	width:max-content;
+	min-width:200px;
+}
+
+.relatedProducts{
+	display:flex;
+	flex-direction:row;
+	padding:100px 0; 
+}
+
+.relatedProductsContent{
+	
+}
+
+.relatedProductsDisplay{
+	display:grid;
+	grid-template-columns:1fr 1fr 1fr 1fr;
+	grid-gap: 40px;
+	height:max-content;
+	width:auto;
+	padding:30px;
+}
+
+.productMenus{
+	background-color:var(--grey);
+	padding:50px 0;
+	border-top:3px solid var(--grey-dark);
+}
+
+.productMenusContent{
+	display:flex;
+	flex-direction:row;
+	justify-content:space-between;
+	/* gap:100px; */
+}
+
+.productMenusContent>div{
+	display:flex;
+	flex-direction:column;
+}
+
+.productMenusContent>div>label{
+	font-weight:600;
+}
+
+.productMenusContent>div>a,
+.productMenusContent>div>span{
+	display:flex;
+	flex-direction:column;
+	text-decoration:none;
+	color:var(--black);
+	font-size:15px;
+	padding:3px 0;
+	transition-duration:0.3s;
+}
+
+.productMenusContent>div a:hover,
+.productMenusContent>div>span:hover{
+	color:var(--primary);
+	/* font-weight:500; */
+	transform: translateX(10px);
+	transition-duration:0.3s;
+}
+
+.productMenusContent>div>span>a{
+	text-decoration:none;
+	color:var(--black);
+}
+
+.divider2{
+	width:50%;
+	height:3px;
+	background-color:var(--primary);
+	margin:5px 0;
+}
