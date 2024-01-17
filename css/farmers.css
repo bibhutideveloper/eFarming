@@ -1,0 +1,75 @@
+.farms-list{
+	display:grid;
+	grid-template-columns:1fr 1fr 1fr;
+	grid-gap: 40px;
+	height:max-content;
+	width:auto;
+	padding:10px 0 50px 0;
+}
+
+.farm-list-content{
+	display:flex;
+	flex-basis:100%;
+	padding:10px;
+	border-radius:10px;
+	box-shadow: 0;
+	transition: all .3s;
+	margin-top:0px;
+	box-shadow:0px 0px 5px rgba(0, 0, 0, 0.5);
+	gap:10px;
+}
+
+.farm-image{
+	display:flex;
+}
+
+.farm-image img{
+	height:100px;
+	border-radius:10px;
+}
+
+.farm-content{
+	display:flex;
+	flex-direction:column;
+	width:70%;
+}
+
+.farm-content .farm-address{
+	display:flex;
+	flex-direction:row;
+}
+
+.farm-content .btn-xs{
+	margin-top:10px;
+}
+
+.farm-list-content:hover{
+	background-color:var(--grey);
+	box-shadow:0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.farmer-name{
+	font-size:15px;
+	font-weight:600;
+}
+
+.farmer-city{
+	color:var(--black-light);
+	font-size:12px;
+}
+
+.farmer-mno,
+.farmer-email{
+	font-size:12px;
+}
+
+.avl-crops{
+	font-size:13px;
+}
+
+@media only screen and (max-width: 768px) {
+	.farms-list{
+		display:flex;
+		flex-direction:column;
+	}
+}

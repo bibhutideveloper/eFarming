@@ -1,0 +1,22 @@
+.about-items{
+	display:flex;
+	padding:50 100px;
+}
+
+.about-content{
+	display:flex;
+	align-items:center;
+	gap:250px;
+}
+
+.about-content p{
+	width:70%;
+}
+
+.about-content img{
+	height:250px;
+}
+
+.about-items:nth-child(even) {
+  background: var(--grey);
+}

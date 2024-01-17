@@ -1,0 +1,89 @@
+/* shape-divider-1 */
+.shape-divider-1 {
+    position: absolute;
+    bottom: -5;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.shape-divider-1 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 100px;
+    transform: rotateY(180deg);
+}
+
+.shape-divider-1 .shape-fill {
+    fill: #FFFFFF;
+}
+
+
+/* shape-divider-2 */
+.shape-divider-2 {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.shape-divider-2 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 100px;
+}
+
+.shape-divider-2 {
+    fill: #ffffff;
+	background-color:transparent;
+}
+
+/* shape-divider-3 */
+.shape-divider-3 {
+position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.shape-divider-3 svg {
+	position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 100px;
+}
+
+.shape-divider-3 .shape-fill {
+    fill: #FFFFFF;
+}
+
+/* shape-divider-4 */
+.shape-divider-4 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.shape-divider-4 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 100px;
+    transform: rotateY(180deg);
+}
+
+.shape-divider-4 .shape-fill {
+    fill: #fff;
+}

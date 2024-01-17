@@ -1,0 +1,17 @@
+.gprice{
+	padding-bottom:50px;
+	display:flex;
+	justify-content:center;
+}
+
+.bgcolor{
+	background-color:lightblue;
+}
+
+.boldtext{
+	font-weight:600;
+}
+
+table *{
+	text-align:center;
+}
